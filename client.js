@@ -70,6 +70,14 @@ let hardcodedArrayOfPairs3 = [
     { donor_blood_type: "AB+", recipient_blood_type: "B+" },
 ]
 
+let hardcodedArrayOfPairs4 = [
+    { donor_blood_type: "B+", recipient_blood_type: "A-" },
+    { donor_blood_type: "A-", recipient_blood_type: "AB+" },
+    { donor_blood_type: "AB+", recipient_blood_type: "B+" },
+    { donor_blood_type: "ACB+", recipient_blood_type: "A+" },
+
+]
+
 function findNextMatch(dominoArray, poolArray){
     //for each pair in the pool
     for (let i=0; i<poolArray.length; i++) {
@@ -137,4 +145,5 @@ createDominoArray(hardcodedArrayOfPairs1);
 // createDominoArray(hardcodedArrayOfPairs2);
 // //this should work. it's the same as my first modified data set, in reverse order
 // createDominoArray(hardcodedArrayOfPairs3);
-
+//this should work. i added a new irrelevant object
+createDominoArray(hardcodedArrayOfPairs4);
